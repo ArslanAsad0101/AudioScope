@@ -1,0 +1,2 @@
+# AudioScope
+mobile app -- Typescript 
