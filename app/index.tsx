@@ -20,7 +20,7 @@ export default function HomeScreen() {
   const [checkingAuth, setCheckingAuth] = useState(true);
   const [profile, setProfile] = useState<Profile>(null);
 
-  // mount animation values
+  
   const mountOpacity = useRef(new Animated.Value(0)).current;
   const mountTranslate = useRef(new Animated.Value(10)).current;
 
@@ -45,7 +45,7 @@ export default function HomeScreen() {
         console.error("Auth check error:", e);
       } finally {
         if (mounted) setCheckingAuth(false);
-        // run mount animation once auth check is done
+        
         Animated.parallel([
           Animated.timing(mountOpacity, {
             toValue: 1,
@@ -135,7 +135,7 @@ export default function HomeScreen() {
   );
 }
 
-/* AnimatedCard: simple scale-on-press card */
+
 function AnimatedCard({ children, onPress }: { children: React.ReactNode; onPress: () => void }) {
   const scale = useRef(new Animated.Value(1)).current;
 
@@ -219,4 +219,5 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "600",
   },
+
 });
