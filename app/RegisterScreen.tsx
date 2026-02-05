@@ -1,4 +1,4 @@
-// ...existing code...
+
 import { useRouter } from "expo-router";
 import * as SecureStore from "expo-secure-store";
 import React, { useState } from "react";
@@ -21,11 +21,11 @@ export default function RegisterScreen() {
     if (password.length < 6) return Alert.alert("Validation", "Password must be at least 6 chars.");
     setLoading(true);
     try {
-      // TODO: call register API
+      
       await new Promise((r) => setTimeout(r, 900));
       await SecureStore.setItemAsync("userToken", "fake-jwt-token");
 
-      // store profile (replace with backend data)
+      
       const profile = { name: email.split("@")[0], email };
       await SecureStore.setItemAsync("userProfile", JSON.stringify(profile));
 
@@ -69,4 +69,5 @@ const styles = StyleSheet.create({
   primaryText: { color: "#042A2B", fontWeight: "700" },
   linkRow: { marginTop: 12 },
   linkText: { color: "#9CA3AF" },
+
 });
