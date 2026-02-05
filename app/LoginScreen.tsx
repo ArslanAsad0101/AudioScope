@@ -1,4 +1,4 @@
-// ...existing code...
+
 import { useRouter } from "expo-router";
 import * as SecureStore from "expo-secure-store";
 import React, { useState } from "react";
@@ -15,7 +15,6 @@ export default function LoginScreen() {
     if (password.length < 6) return Alert.alert("Validation", "Password must be at least 6 characters.");
     setLoading(true);
     try {
-      // TODO: call your API here
       await new Promise((r) => setTimeout(r, 800));
       await SecureStore.setItemAsync("userToken", "fake-jwt-token");
 
@@ -58,4 +57,5 @@ const styles = StyleSheet.create({
   primaryText: { color: "#042A2B", fontWeight: "700" },
   linkRow: { marginTop: 12 },
   linkText: { color: "#9CA3AF" },
+
 });
