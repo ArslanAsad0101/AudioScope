@@ -13,7 +13,7 @@ export default function UserGuide() {
           Learn how to use AudioScope step by step.
         </Text>
 
-        {/* Section 1 */}
+      
         <View style={styles.section}>
           <Text style={styles.heading}>🎵 Upload Audio File</Text>
           <Text style={styles.text}>
@@ -24,7 +24,7 @@ export default function UserGuide() {
           </Text>
         </View>
 
-        {/* Section 2 */}
+        
         <View style={styles.section}>
           <Text style={styles.heading}>📞 Integrate in Call</Text>
           <Text style={styles.text}>
@@ -35,7 +35,7 @@ export default function UserGuide() {
           </Text>
         </View>
 
-        {/* Section 3 */}
+        
         <View style={styles.section}>
           <Text style={styles.heading}>🕒 Processing History</Text>
           <Text style={styles.text}>
@@ -45,7 +45,7 @@ export default function UserGuide() {
           </Text>
         </View>
 
-        {/* Section 4 */}
+        
         <View style={styles.section}>
           <Text style={styles.heading}>⚙️ Common Errors & Fixes</Text>
           <Text style={styles.text}>
@@ -55,7 +55,7 @@ export default function UserGuide() {
           </Text>
         </View>
 
-        {/* Section 5 */}
+        
         <View style={styles.section}>
           <Text style={styles.heading}>ℹ️ Tips for Best Results</Text>
           <Text style={styles.text}>
@@ -128,3 +128,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
