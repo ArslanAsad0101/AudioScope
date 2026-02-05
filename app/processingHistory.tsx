@@ -36,7 +36,7 @@ export default function ProcessingHistory() {
       setPlayingId(item.id);
 
       newSound.setOnPlaybackStatusUpdate((status: AVPlaybackStatus) => {
-        // ✅ Properly check if status is success type
+      
         if (!status.isLoaded) return;
 
         if (!status.isPlaying) {
@@ -124,3 +124,4 @@ const styles = StyleSheet.create({
   btnText: { color: "#fff", fontWeight: "600" },
   emptyText: { color: "#999", fontStyle: "italic", textAlign: "center", marginTop: 40 },
 });
+
