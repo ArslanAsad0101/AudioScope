@@ -1,4 +1,4 @@
-// ...existing code...
+
 import { useRouter } from "expo-router";
 import * as SecureStore from "expo-secure-store";
 import React, { useEffect, useState } from "react";
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   linkRow: { marginTop: 12 },
   linkText: { color: "#9CA3AF" },
 
-  // new logout button styles
+  
   logoutBtn: {
     backgroundColor: "#E53935",
     padding: 12,
@@ -78,4 +78,5 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   logoutText: { color: "#fff", fontWeight: "700" },
+
 });
